@@ -24,7 +24,8 @@ import Contact from "./components/Contact";
 import Navbar from "./components/Navbar";
 import Product from "./components/Product";
 import Login from "./components/Login";
-
+import ProductDetails from "./components/ProductDetails";
+import Products from "./components/Products";
 function App() {
 
 return (
@@ -46,9 +47,10 @@ return (
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/products/:id" element={<Product />} />
-        <Route path="/login" element={<Login />} />
+        <Route path="/products/:id" element={<ProductDetails />} />
         {/* here :id is dynamic */}
+        <Route path="/login" element={<Login />} />
+        <Route path="/products" element={<Products />} />
       </Routes>
     </BrowserRouter>
 

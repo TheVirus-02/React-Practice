@@ -8,7 +8,7 @@ function Login() {
 
     navigate("/");
   }
-
+  
   return (
     <button onClick={handleLogin}>
       Login
