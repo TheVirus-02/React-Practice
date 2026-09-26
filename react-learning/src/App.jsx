@@ -26,6 +26,8 @@ import Product from "./components/Product";
 import Login from "./components/Login";
 import ProductDetails from "./components/ProductDetails";
 import Products from "./components/Products";
+import Context from "./components/Context";
+
 function App() {
 
 return (
@@ -51,6 +53,7 @@ return (
         {/* here :id is dynamic */}
         <Route path="/login" element={<Login />} />
         <Route path="/products" element={<Products />} />
+        <Route path="/context" element={<Context />} />
       </Routes>
     </BrowserRouter>
 
